@@ -9,4 +9,20 @@
 
 h1, h2, h3 {
   font-family: 'Overpass', sans-serif;
+  text-align: center;
+}
+
+body {
+  min-width: 100vw;
+}
+
+.btn-outline {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.75);
 }
