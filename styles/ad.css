@@ -1,0 +1,22 @@
+#ad {
+  background: url('../images/bg-pattern-circles.svg'), linear-gradient(90deg, hsl(237, 17%, 21%) 0%, hsl(237, 23%, 32%) 100%);
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: 100%;
+  padding: 10%;
+  color: white;
+  border-radius: 0 10rem 0 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 32rem;
+  margin-bottom: 6rem;
+}
+
+#ad article {
+  width: 50%;
+}
+
+#ad img {
+  width: 50%;
+}
