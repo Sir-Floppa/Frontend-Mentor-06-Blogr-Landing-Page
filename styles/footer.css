@@ -37,4 +37,17 @@ footer a:hover, .attribution a:hover {
   background-color: hsl(240, 10%, 16%);
   color: white;
   padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+@media (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    height: 48rem;
+  }
+
+  footer ul {
+    text-align: center;
+  }
 }
