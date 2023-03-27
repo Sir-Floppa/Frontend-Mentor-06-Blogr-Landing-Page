@@ -35,3 +35,35 @@
 #intro h1, #intro h2 {
   color: hsl(237, 17%, 21%)
 }
+
+@media (max-width: 800px) {
+  #intro {
+    padding-left: 5%;
+    padding-right: 5%;
+    background-image: none;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  #intro article {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  #intro h1, #intro h2, #intro p {
+    text-align: center;
+    padding: 0;
+  }
+
+  #intro h1 {
+    padding: 6rem 0;
+    font-size: 2rem;
+  }
+
+  #intro p {
+    width: 100%;
+  }
+}
