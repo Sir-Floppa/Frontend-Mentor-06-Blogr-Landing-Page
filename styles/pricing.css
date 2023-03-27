@@ -37,3 +37,27 @@
 #pricing h1, #pricing h2 {
   color: hsl(237, 17%, 21%)
 }
+
+@media (max-width: 800px) {
+  #pricing {
+    background-image: none;
+    margin-top: 2rem;
+  }
+
+  #pricing article {
+    align-items: center;
+  }
+
+  #pricing img {
+    display: block;
+    width: 100%;
+  }
+
+  #pricing article {
+    width: 100%;
+  }
+
+  #pricing h2, #pricing p {
+    text-align: center;
+  }
+}
