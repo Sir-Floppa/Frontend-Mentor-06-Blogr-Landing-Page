@@ -32,6 +32,7 @@ nav span {
 
 nav span img {
   margin-left: .25rem;
+  transition: rotate .5s ease-in-out;
 }
 
 nav .buttons {
@@ -55,24 +56,29 @@ h1 {
   gap: 1rem;
 }
 
-button {
-  outline: none;
-  border: none;
-  background-color: white;
-  color: hsl(355, 100%, 74%);
-  padding: 1rem;
-  width: 9rem;
-  border-radius: 2rem;
-  font-weight: 600;
-  font-size: 1rem;
-  cursor: pointer
-}
-
 .show {
   display: block;
   position: absolute;
+  background-color: white;
+  border-radius: .25rem;
+  list-style: none;
+  padding: 2rem 1.5rem;
+  color: black;
+  font-weight: 300;
+  line-height: 2rem;
+  width: 10rem;
+  margin-top: 2rem;
+}
+
+.show li:hover {
+  font-weight: 600;
 }
 
 .hide {
   display: none;
+}
+
+.flip {
+  rotate: 180deg;
+  transition: rotate .5s ease-in-out;
 }
