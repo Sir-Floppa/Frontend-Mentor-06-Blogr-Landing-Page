@@ -10,6 +10,7 @@ header {
   padding: 4rem 8rem 8rem;
   border-radius: 0 0 0 6rem;
   height: 60vh;
+  width: 100vw;
 }
 
 nav {
@@ -81,4 +82,35 @@ h1 {
 .flip {
   rotate: 180deg;
   transition: rotate .5s ease-in-out;
+}
+
+@media (max-width: 800px) {
+  header {
+    background-position: 100%;
+    width: 100%;
+    padding: 4rem 2rem;
+    padding-bottom: 10rem;
+    height: 75vh;
+  }
+
+  nav .headerMenu, nav .buttons {
+    display: none;
+  }
+  
+  nav {
+    margin-bottom: 2rem;
+    justify-content: space-between;
+    width: 100vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  nav #hamMenu {
+    display: block;
+    cursor: pointer;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
 }
