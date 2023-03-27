@@ -1,0 +1,39 @@
+#pricing {
+  padding: 30% 0;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../images/illustration-laptop-desktop.svg');
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: -85%;
+  background-size: 75%;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  gap: 3rem;
+}
+
+#pricing article {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+  height: 50%;
+}
+
+#pricing p {
+  width: 80%;
+  color:hsl(207, 13%, 34%);
+}
+
+#pricing h1 {
+  padding: 8rem;
+}
+
+#pricing h2 {
+  text-align: left;
+}
+
+#pricing h1, #pricing h2 {
+  color: hsl(237, 17%, 21%)
+}
