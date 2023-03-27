@@ -13,10 +13,28 @@
   margin-bottom: -6rem;
 }
 
-#ad article {
+#ad article, #ad img {
   width: 50%;
 }
 
-#ad img {
-  width: 50%;
+
+@media (max-width: 800px) {
+  #ad {
+    flex-direction: column;
+    background-position-x: center;
+    background-position-y: 180%;
+    height: 46rem;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 6rem;
+  }
+
+  #ad article, #ad img {
+    width: 100%;
+  }
+
+  #ad img {
+    margin-top: -10rem;
+  }
 }

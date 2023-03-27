@@ -66,4 +66,8 @@
   #intro p {
     width: 100%;
   }
+
+  #intro img {
+    display: block;
+  }
 }
