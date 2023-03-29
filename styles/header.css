@@ -83,6 +83,10 @@ h1 {
   transition: rotate .5s ease-in-out;
 }
 
+.mobileMenu {
+  display: none;
+}
+
 @media (max-width: 800px) {
   header {
     background-position: 100%;
@@ -91,8 +95,51 @@ h1 {
     padding-bottom: 10rem;
     height: 75vh;
   }
+  
+  .desktopMenu {
+    display: none;
+  }
 
-  nav .headerMenu, nav .buttons {
+  .menu {
+    flex-direction: column;
+    background-color: white;
+    width: 95%;
+    border-radius: .25rem;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 8rem;
+  }
+  
+  .menu .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid rgba(128, 128, 128, 0.295);
+    padding-top: 1rem;
+  }
+  
+  .menu span {
+    color: hsl(237, 23%, 32%);
+  }
+  
+  .menu span, .menu .buttons button {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: 'Overpass';
+  }
+
+  .menu ul {
+    background-color: hsla(237, 23%, 32%, 0.1);
+    color: hsl(237, 23%, 32%);
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+  }
+
+  .menu #logo {
     display: none;
   }
   
@@ -102,8 +149,13 @@ h1 {
     width: 100vw;
     padding-left: 2rem;
     padding-right: 2rem;
+    text-align: center;
   }
-
+  
+  .mobileMenu {
+    display: flex;
+  }
+  
   nav #hamMenu {
     display: block;
     cursor: pointer;
@@ -111,5 +163,20 @@ h1 {
 
   header h1 {
     font-size: 2rem;
+  }
+
+  .menu button {
+    background: linear-gradient(90deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 100%);
+    color:rgba(255, 255, 255, 0.75);
+  }
+
+  .menu button:first-child {
+    background: white;
+    color: hsl(237, 23%, 32%);
+  }
+
+  .show {
+    position: relative;
+    text-align: center;
   }
 }
